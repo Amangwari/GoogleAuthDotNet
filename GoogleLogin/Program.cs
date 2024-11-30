@@ -7,7 +7,7 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // JWT configuration from appsettings.json
-var jwtSettings = builder.Configuration.GetSection("Jwt");
+var jwtSettings = builder.Configuration.GetSection("Jwt"); 
 var secretKey = jwtSettings["SecretKey"];
 var issuer = jwtSettings["Issuer"];
 var audience = jwtSettings["Audience"];
